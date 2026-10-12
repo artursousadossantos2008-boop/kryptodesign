@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krypto Design - Portfólio de Design Esportivo</title>
+    <!-- Fonte moderna do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,900;1,400;1,900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0d0d0d;
+            --card-bg: #1a1a1a;
+            --accent-color: #00ff66; /* Verde neon estilo esportivo */
+            --text-color: #ffffff;
+            --text-muted: #a0a0a0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        header {
+            text-align: center;
+            padding: 80px 20px 40px 20px;
+            background: linear-gradient(to bottom, #141414, var(--bg-color));
+            border-bottom: 2px solid #222;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        header h1 span {
+            color: var(--accent-color);
+        }
+
+        header p {
+            color: var(--text-muted);
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .social-links {
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            color: var(--text-color);
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 700;
+            transition: 0.3s;
+        }
+
+        .social-links a:hover {
+            color: var(--accent-color);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 50px 20px;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            border-left: 5px solid var(--accent-color);
+            padding-left: 15px;
+            letter-spacing: 1px;
+        }
+
+        /* Grade de Projetos */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #2a2a2a;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-color);
+        }
+
+        .card-img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            background-color: #222;
+        }
+
+        .card-info {
+            padding: 20px;
+        }
+
+        .card-info h3 {
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+        }
+
+        .card-info p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: var(--text-muted);
+            border-top: 1px solid #222;
+            font-size: 0.9rem;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1><span>Krypto</span> Design</h1>
+        <p>Match Day • Cartazes • Identidades Visuais Esportivas</p>
+        <div class="social-links">
+            <a href="https://instagram.com/seuusuario" target="_blank">Instagram</a>
+            <a href="https://behance.net/seuusuario" target="_blank">Behance</a>
+            <a href="mailto:seuemail@email.com">Contato</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <h2 class="section-title">Últimos Trabalhos</h2>
+        
+        <div class="grid">
+            <!-- Projeto 1 -->
+            <div class="card">
+                <img src="./Arte_1.png" alt="Arte Match Day" class="card-img">
+                <div class="card-info">
+                    <h3>Match Day - Final do Campeonato</h3>
+                    <p>Arte promocional para redes sociais</p>
+                </div>
+            </div>
+
+            <!-- Projeto 2 -->
+            <div class="card">
+                <img src="./Arte_2.jfif" alt="Anúncio de Jogador" class="card-img">
+                <div class="card-info">
+                    <h3>Anúncio de Contratação</h3>
+                    <p>Design focado em impacto visual e engajamento</p>
+                </div>
+            </div>
+
+            <!-- Projeto 3 -->
+            <div class="card">
+                <img src="./Arte_3.jfif" alt="Identidade Visual" class="card-img">
+                <div class="card-info">
+                    <h3>Branding para Equipe de Esports</h3>
+                    <p>Escudo, paleta de cores e uniformes</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Krypto Design. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
